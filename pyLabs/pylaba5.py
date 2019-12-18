@@ -51,4 +51,6 @@ else:
     print ('Такой функции не существует')
     
 
-my_string
+print (my_string)
+template = str(input('Введите искомый шаблон: '))
+
