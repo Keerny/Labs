@@ -20,7 +20,10 @@ if q == 1:
             G = (4*(-18*a*a+3*a*x1+10*x1*x1))/(15*a*a+29*a*x1+12*x1*x1)
             my_list.extend([G])
         x1 = x1 + h
-    print (x1, F)
+    print (x1, G)
+    my_list.sort()
+    print ('Наибольший элемент массива' , my_list[-1])
+    print ('Наименьший элемент массива' , my_list[0])
         
 elif q == 2:
     print (x1, math.tan(15*a*a-41*a*x1+28*x1*x1))
@@ -29,6 +32,9 @@ elif q == 2:
         my_list.extend([F])
         x1 = x1 + h
     print (x1, F)
+    my_list.sort()
+    print ('Наибольший элемент массива' , my_list[-1])
+    print ('Наименьший элемент массива' , my_list[0])
 
 elif q == 3:
     print (x1, math.acos(a*(-a)+3*a*x1+4*x1*x1+1))
@@ -40,7 +46,9 @@ elif q == 3:
             my_list.extend([Y])
         x1 = x1 + h
     print (x1, Y)
-
+    my_list.sort()
+    print ('Наибольший элемент массива' , my_list[-1])
+    print ('Наименьший элемент массива' , my_list[0])
 
 else:
     print ('Такой функции не существует')
