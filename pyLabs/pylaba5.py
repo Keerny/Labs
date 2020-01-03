@@ -52,5 +52,11 @@ else:
     
 
 print (my_string)
-template = str(input('Введите искомый шаблон: '))
+template = float(input('Введите искомый шаблон: '))
+
+j = 0
+for n in my_list:
+    if n == template:
+        j = j+1
+print (j)
 
