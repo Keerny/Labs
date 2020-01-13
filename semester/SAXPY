@@ -1,0 +1,19 @@
+ax = []
+ay = []
+
+x = [int(i) for i in input('Введите координаты х: ').split()]
+y = [int(i) for i in input('Введите координаты y: ').split()]
+
+a = float(input('Введите скаляр: '))
+
+for elem_x in x:
+    ax.append(elem_x * a)
+print('Вектор х, умноженный на скаляр: ', ax)
+
+for elem_x in x:
+    ax.append(elem_x * a)
+print('Вектор х, умноженные на скаляр: ', ax)
+for elem in zip(y, ax):
+    x_elem, y_elem = elem
+    ay.append(x_elem + y_elem)
+print('Вектор у: ', ay)
