@@ -1,0 +1,9 @@
+matrix = [[1, 1, 1],
+          [1, 1, 1],
+          [1, 1, 1]]
+n = int(input('На какое число умножить матрицу?'))
+for i in range(len(matrix)):
+    for j in range(len(matrix[i])):
+        matrix[i][j] = matrix[i][j] * n
+        print(matrix[i][j], end=' ')
+    print()
